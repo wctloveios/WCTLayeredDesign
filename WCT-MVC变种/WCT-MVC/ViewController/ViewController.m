@@ -9,7 +9,7 @@
 #import "WCTView.h"
 #import "WCTModel.h"
 
-@interface ViewController ()<WCTViewDelegate>
+@interface ViewController ()
 
 @end
 
@@ -26,16 +26,8 @@
     model.desc = @"一个努力学习进步的人";
     
     WCTView *wctView = [[WCTView alloc] initWithFrame:CGRectMake(0, 100, [UIScreen mainScreen].bounds.size.width - 20, 400)];
-    wctView.backgroundColor = [UIColor redColor];
-    wctView.delegate = self;
+    wctView.model = model;
     [self.view addSubview:wctView];
-    
-//    wctView.nameLabel.text = model.name;
-//    wctView.ageLabel.text = model.age;
-//    wctView.adressLabel.text = model.adress;
-//    wctView.descLabel.text = model.desc;
-    
-    [wctView reloadViewWithModel:model];
     
     /*
      MVC变种，其实就是将model和view建立了联系，view依据Model来展示数据，VC组装Model，组装展示是在view中实现。
@@ -48,10 +40,5 @@
      想要监听view的点击事件来做一些操作，那么我们可以使用代理和block,这里id是实现了FYAppleViewProtocol协议的，weak修饰防止循环引用，使用协议实现了和VC的通信。
      */
 }
-
-- (void)wctViewDidClick:(WCTView *)view {
-    NSLog(@"点击了信息View");
-}
-
 
 @end

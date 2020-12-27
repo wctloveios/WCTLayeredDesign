@@ -1,0 +1,643 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04548FD52598C72F00DE9F82 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04548FD42598C72F00DE9F82 /* AppDelegate.m */; };
+		04548FD82598C72F00DE9F82 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04548FD72598C72F00DE9F82 /* SceneDelegate.m */; };
+		04548FDB2598C72F00DE9F82 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04548FDA2598C72F00DE9F82 /* ViewController.m */; };
+		04548FDE2598C72F00DE9F82 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04548FDC2598C72F00DE9F82 /* Main.storyboard */; };
+		04548FE02598C73100DE9F82 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04548FDF2598C73100DE9F82 /* Assets.xcassets */; };
+		04548FE32598C73100DE9F82 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04548FE12598C73100DE9F82 /* LaunchScreen.storyboard */; };
+		04548FE62598C73100DE9F82 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04548FE52598C73100DE9F82 /* main.m */; };
+		04548FF02598C73200DE9F82 /* WCT_MVPTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04548FEF2598C73200DE9F82 /* WCT_MVPTests.m */; };
+		04548FFB2598C73200DE9F82 /* WCT_MVPUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04548FFA2598C73200DE9F82 /* WCT_MVPUITests.m */; };
+		0454900D2598C76000DE9F82 /* WCTPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0454900C2598C76000DE9F82 /* WCTPresenter.m */; };
+		045490192598C8A700DE9F82 /* WCTModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 045490182598C8A700DE9F82 /* WCTModel.m */; };
+		045490222598C8D400DE9F82 /* WCTView.m in Sources */ = {isa = PBXBuildFile; fileRef = 045490202598C8D400DE9F82 /* WCTView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		04548FEC2598C73200DE9F82 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04548FC82598C72F00DE9F82 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04548FCF2598C72F00DE9F82;
+			remoteInfo = "WCT-MVP";
+		};
+		04548FF72598C73200DE9F82 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04548FC82598C72F00DE9F82 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04548FCF2598C72F00DE9F82;
+			remoteInfo = "WCT-MVP";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		04548FD02598C72F00DE9F82 /* WCT-MVP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WCT-MVP.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		04548FD32598C72F00DE9F82 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		04548FD42598C72F00DE9F82 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		04548FD62598C72F00DE9F82 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		04548FD72598C72F00DE9F82 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		04548FD92598C72F00DE9F82 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		04548FDA2598C72F00DE9F82 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		04548FDD2598C72F00DE9F82 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		04548FDF2598C73100DE9F82 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		04548FE22598C73100DE9F82 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		04548FE42598C73100DE9F82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04548FE52598C73100DE9F82 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		04548FEB2598C73200DE9F82 /* WCT-MVPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "WCT-MVPTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		04548FEF2598C73200DE9F82 /* WCT_MVPTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WCT_MVPTests.m; sourceTree = "<group>"; };
+		04548FF12598C73200DE9F82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04548FF62598C73200DE9F82 /* WCT-MVPUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "WCT-MVPUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		04548FFA2598C73200DE9F82 /* WCT_MVPUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WCT_MVPUITests.m; sourceTree = "<group>"; };
+		04548FFC2598C73200DE9F82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0454900B2598C76000DE9F82 /* WCTPresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WCTPresenter.h; sourceTree = "<group>"; };
+		0454900C2598C76000DE9F82 /* WCTPresenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WCTPresenter.m; sourceTree = "<group>"; };
+		045490172598C8A600DE9F82 /* WCTModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCTModel.h; sourceTree = "<group>"; };
+		045490182598C8A700DE9F82 /* WCTModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCTModel.m; sourceTree = "<group>"; };
+		045490202598C8D400DE9F82 /* WCTView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCTView.m; sourceTree = "<group>"; };
+		045490212598C8D400DE9F82 /* WCTView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCTView.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		04548FCD2598C72F00DE9F82 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04548FE82598C73200DE9F82 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04548FF32598C73200DE9F82 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04548FC72598C72F00DE9F82 = {
+			isa = PBXGroup;
+			children = (
+				04548FD22598C72F00DE9F82 /* WCT-MVP */,
+				04548FEE2598C73200DE9F82 /* WCT-MVPTests */,
+				04548FF92598C73200DE9F82 /* WCT-MVPUITests */,
+				04548FD12598C72F00DE9F82 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		04548FD12598C72F00DE9F82 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				04548FD02598C72F00DE9F82 /* WCT-MVP.app */,
+				04548FEB2598C73200DE9F82 /* WCT-MVPTests.xctest */,
+				04548FF62598C73200DE9F82 /* WCT-MVPUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		04548FD22598C72F00DE9F82 /* WCT-MVP */ = {
+			isa = PBXGroup;
+			children = (
+				04548FD32598C72F00DE9F82 /* AppDelegate.h */,
+				04548FD42598C72F00DE9F82 /* AppDelegate.m */,
+				04548FD62598C72F00DE9F82 /* SceneDelegate.h */,
+				04548FD72598C72F00DE9F82 /* SceneDelegate.m */,
+				045490262598CCF100DE9F82 /* VC */,
+				045490272598CCF900DE9F82 /* P */,
+				045490282598CD0400DE9F82 /* View */,
+				0454902F2598CD1C00DE9F82 /* Model */,
+				04548FDC2598C72F00DE9F82 /* Main.storyboard */,
+				04548FDF2598C73100DE9F82 /* Assets.xcassets */,
+				04548FE12598C73100DE9F82 /* LaunchScreen.storyboard */,
+				04548FE42598C73100DE9F82 /* Info.plist */,
+				04548FE52598C73100DE9F82 /* main.m */,
+			);
+			path = "WCT-MVP";
+			sourceTree = "<group>";
+		};
+		04548FEE2598C73200DE9F82 /* WCT-MVPTests */ = {
+			isa = PBXGroup;
+			children = (
+				04548FEF2598C73200DE9F82 /* WCT_MVPTests.m */,
+				04548FF12598C73200DE9F82 /* Info.plist */,
+			);
+			path = "WCT-MVPTests";
+			sourceTree = "<group>";
+		};
+		04548FF92598C73200DE9F82 /* WCT-MVPUITests */ = {
+			isa = PBXGroup;
+			children = (
+				04548FFA2598C73200DE9F82 /* WCT_MVPUITests.m */,
+				04548FFC2598C73200DE9F82 /* Info.plist */,
+			);
+			path = "WCT-MVPUITests";
+			sourceTree = "<group>";
+		};
+		045490262598CCF100DE9F82 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				04548FD92598C72F00DE9F82 /* ViewController.h */,
+				04548FDA2598C72F00DE9F82 /* ViewController.m */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		045490272598CCF900DE9F82 /* P */ = {
+			isa = PBXGroup;
+			children = (
+				0454900B2598C76000DE9F82 /* WCTPresenter.h */,
+				0454900C2598C76000DE9F82 /* WCTPresenter.m */,
+			);
+			path = P;
+			sourceTree = "<group>";
+		};
+		045490282598CD0400DE9F82 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				045490212598C8D400DE9F82 /* WCTView.h */,
+				045490202598C8D400DE9F82 /* WCTView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0454902F2598CD1C00DE9F82 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				045490172598C8A600DE9F82 /* WCTModel.h */,
+				045490182598C8A700DE9F82 /* WCTModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		04548FCF2598C72F00DE9F82 /* WCT-MVP */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04548FFF2598C73200DE9F82 /* Build configuration list for PBXNativeTarget "WCT-MVP" */;
+			buildPhases = (
+				04548FCC2598C72F00DE9F82 /* Sources */,
+				04548FCD2598C72F00DE9F82 /* Frameworks */,
+				04548FCE2598C72F00DE9F82 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "WCT-MVP";
+			productName = "WCT-MVP";
+			productReference = 04548FD02598C72F00DE9F82 /* WCT-MVP.app */;
+			productType = "com.apple.product-type.application";
+		};
+		04548FEA2598C73200DE9F82 /* WCT-MVPTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 045490022598C73200DE9F82 /* Build configuration list for PBXNativeTarget "WCT-MVPTests" */;
+			buildPhases = (
+				04548FE72598C73200DE9F82 /* Sources */,
+				04548FE82598C73200DE9F82 /* Frameworks */,
+				04548FE92598C73200DE9F82 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04548FED2598C73200DE9F82 /* PBXTargetDependency */,
+			);
+			name = "WCT-MVPTests";
+			productName = "WCT-MVPTests";
+			productReference = 04548FEB2598C73200DE9F82 /* WCT-MVPTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		04548FF52598C73200DE9F82 /* WCT-MVPUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 045490052598C73200DE9F82 /* Build configuration list for PBXNativeTarget "WCT-MVPUITests" */;
+			buildPhases = (
+				04548FF22598C73200DE9F82 /* Sources */,
+				04548FF32598C73200DE9F82 /* Frameworks */,
+				04548FF42598C73200DE9F82 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04548FF82598C73200DE9F82 /* PBXTargetDependency */,
+			);
+			name = "WCT-MVPUITests";
+			productName = "WCT-MVPUITests";
+			productReference = 04548FF62598C73200DE9F82 /* WCT-MVPUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		04548FC82598C72F00DE9F82 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					04548FCF2598C72F00DE9F82 = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
+					04548FEA2598C73200DE9F82 = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = 04548FCF2598C72F00DE9F82;
+					};
+					04548FF52598C73200DE9F82 = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = 04548FCF2598C72F00DE9F82;
+					};
+				};
+			};
+			buildConfigurationList = 04548FCB2598C72F00DE9F82 /* Build configuration list for PBXProject "WCT-MVP" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 04548FC72598C72F00DE9F82;
+			productRefGroup = 04548FD12598C72F00DE9F82 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				04548FCF2598C72F00DE9F82 /* WCT-MVP */,
+				04548FEA2598C73200DE9F82 /* WCT-MVPTests */,
+				04548FF52598C73200DE9F82 /* WCT-MVPUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		04548FCE2598C72F00DE9F82 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04548FE32598C73100DE9F82 /* LaunchScreen.storyboard in Resources */,
+				04548FE02598C73100DE9F82 /* Assets.xcassets in Resources */,
+				04548FDE2598C72F00DE9F82 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04548FE92598C73200DE9F82 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04548FF42598C73200DE9F82 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		04548FCC2598C72F00DE9F82 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04548FDB2598C72F00DE9F82 /* ViewController.m in Sources */,
+				0454900D2598C76000DE9F82 /* WCTPresenter.m in Sources */,
+				04548FD52598C72F00DE9F82 /* AppDelegate.m in Sources */,
+				045490192598C8A700DE9F82 /* WCTModel.m in Sources */,
+				04548FE62598C73100DE9F82 /* main.m in Sources */,
+				04548FD82598C72F00DE9F82 /* SceneDelegate.m in Sources */,
+				045490222598C8D400DE9F82 /* WCTView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04548FE72598C73200DE9F82 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04548FF02598C73200DE9F82 /* WCT_MVPTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04548FF22598C73200DE9F82 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04548FFB2598C73200DE9F82 /* WCT_MVPUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		04548FED2598C73200DE9F82 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04548FCF2598C72F00DE9F82 /* WCT-MVP */;
+			targetProxy = 04548FEC2598C73200DE9F82 /* PBXContainerItemProxy */;
+		};
+		04548FF82598C73200DE9F82 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04548FCF2598C72F00DE9F82 /* WCT-MVP */;
+			targetProxy = 04548FF72598C73200DE9F82 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		04548FDC2598C72F00DE9F82 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04548FDD2598C72F00DE9F82 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		04548FE12598C73100DE9F82 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04548FE22598C73100DE9F82 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		04548FFD2598C73200DE9F82 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		04548FFE2598C73200DE9F82 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		045490002598C73200DE9F82 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VVTLVSMJ6Q;
+				INFOPLIST_FILE = "WCT-MVP/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "wctloveios-163.com.WCT-MVP";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		045490012598C73200DE9F82 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VVTLVSMJ6Q;
+				INFOPLIST_FILE = "WCT-MVP/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "wctloveios-163.com.WCT-MVP";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		045490032598C73200DE9F82 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VVTLVSMJ6Q;
+				INFOPLIST_FILE = "WCT-MVPTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "wctloveios-163.com.WCT-MVPTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WCT-MVP.app/WCT-MVP";
+			};
+			name = Debug;
+		};
+		045490042598C73200DE9F82 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VVTLVSMJ6Q;
+				INFOPLIST_FILE = "WCT-MVPTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "wctloveios-163.com.WCT-MVPTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WCT-MVP.app/WCT-MVP";
+			};
+			name = Release;
+		};
+		045490062598C73200DE9F82 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VVTLVSMJ6Q;
+				INFOPLIST_FILE = "WCT-MVPUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "wctloveios-163.com.WCT-MVPUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "WCT-MVP";
+			};
+			name = Debug;
+		};
+		045490072598C73200DE9F82 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VVTLVSMJ6Q;
+				INFOPLIST_FILE = "WCT-MVPUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "wctloveios-163.com.WCT-MVPUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "WCT-MVP";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		04548FCB2598C72F00DE9F82 /* Build configuration list for PBXProject "WCT-MVP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04548FFD2598C73200DE9F82 /* Debug */,
+				04548FFE2598C73200DE9F82 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04548FFF2598C73200DE9F82 /* Build configuration list for PBXNativeTarget "WCT-MVP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				045490002598C73200DE9F82 /* Debug */,
+				045490012598C73200DE9F82 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		045490022598C73200DE9F82 /* Build configuration list for PBXNativeTarget "WCT-MVPTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				045490032598C73200DE9F82 /* Debug */,
+				045490042598C73200DE9F82 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		045490052598C73200DE9F82 /* Build configuration list for PBXNativeTarget "WCT-MVPUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				045490062598C73200DE9F82 /* Debug */,
+				045490072598C73200DE9F82 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 04548FC82598C72F00DE9F82 /* Project object */;
+}
